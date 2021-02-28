@@ -46,6 +46,8 @@ html {
 .header__tittle {
     height: 100%;
     width: 40%;
+    text-align: center;
+    font-size: 1.4rem;
 }
 
 .header__nav {
@@ -158,3 +160,17 @@ html {
     transform: translateY(-9px) rotate(-45deg);
 }
 
+/*Presentation styles*/
+
+.presentation {
+
+}
+.presentation__title {
+
+}
+.presentation__mini_description {
+
+}
+.presentation__mini_description-paragraph {
+    
+}
