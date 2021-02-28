@@ -51,6 +51,7 @@ html {
 .header__nav {
     height: 100%;
     width: 60%;
+    position: relative;
 }
 
 .header__list {
@@ -58,14 +59,58 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 1;
     list-style: none;
-    width: 100%;
+    width: 0;
 }
 
 .header__list-item {
     height: 30%;
     width: 100%;
+    opacity: 0;
+}
+
+/*animaciones*/
+.hamburguer-menu-animation {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1, 0;
+}
+
+.header__list--item-view-animation {
+    animation-name: views-items;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1, 0;
+}
+@keyframes views-items{
+    60%{
+        opacity: 0.5;
+    }
+    90%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes move{
+    60% {
+        width: 200px;
+        background-color: blue;
+    }
+    90% {
+        width: 350px;
+        background-color: blue;
+    }
+    100%{
+        width: 400px;
+        background-color: blue;
+    }
 }
 
 /*hamburguer menu*/
@@ -73,36 +118,43 @@ html {
     width: 30px;
     height: 20px;
     margin: 100px auto;
+    position: relative;
+    z-index: 2;
 }
-#pitcher {
-      position: absolute;
-      left: -9999px;
-    }
+
+.pitcher {
+    position: absolute;
+    display: none;
+}
+
 .activator-menu > label {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;  
-      cursor: pointer;
-    }
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    height: 100%;  
+    justify-content: space-between;
+    position: relative;
+    top: -90px;
+    right: 18px;
+}
+
 .activator-menu-linea {
-      height: 2px;
-      background-color: #000;
-      opacity: 1;
-      transform: translateY(0) rotate(0);
-      transition: all 0.2s;
-    }
-#pitcher:checked ~ label .activator-menu-linea:nth-child(1) {
+    background-color: #000000;
+    height: 2px;
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+    transition: all 0.2s;
+}
+
+.pitcher:checked ~ label .activator-menu-linea:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
 }
 
-#pitcher:checked ~ label .activator-menu-linea:nth-child(2) {
+.pitcher:checked ~ label .activator-menu-linea:nth-child(2) {
     opacity: 0;
 }
 
-#pitcher:checked ~ label .activator-menu-linea:nth-child(3) {
+.pitcher:checked ~ label .activator-menu-linea:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
-
-
 
