@@ -27,6 +27,6 @@ checkbox.addEventListener('click', e => {
     };
     if ( !checkbox.checked && menu.classList.contains(CLASS_MENU) ) {
         menu.classList.remove(CLASS_MENU);
-        mappingItemasClassAddOrRemove(menuItems)
+        mappingItemasClassAddOrRemove(menuItems);
     }
 });

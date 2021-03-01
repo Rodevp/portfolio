@@ -1,5 +1,4 @@
 :root {
-    --primary-color: #000000;
     --secundary-color: #52057b;
     --thirty-color: #892cdc;
     --global-color: #bc6ff1;
@@ -76,17 +75,11 @@ html {
 
 /*animaciones*/
 .hamburguer-menu-animation {
-    animation-name: move;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1, 0;
+    animation: move 1s ease-in-out forwards;
 }
 
 .header__list--item-view-animation {
-    animation-name: views-items;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1, 0;
+    animation: views-items 1s ease-in-out forwards;
 }
 @keyframes views-items{
     60%{
