@@ -22,7 +22,7 @@ html {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, minmax(150px, 1fr));
+    grid-template-rows: repeat(6, minmax(150px, 1fr));
     grid-auto-flow: row;
     height: 820px;
     width: 100%;
@@ -225,4 +225,62 @@ html {
 .about-me__description__image > img {
     width: 100%;
     height: 100%;
+}
+
+/*styles contact & studies*/
+.contact-and-studies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: row;
+    height: 100%;
+    width: 90%;
+    grid-column: 1 / 6;
+    grid-row:  4 / 4;
+    gap: 5px;
+    align-items: center;
+    align-content: center;
+    margin:  140px auto 0 auto;
+} 
+
+.contact__github, .contact__platzi, .contact__twitter,
+.contact__linkedin, .contact__academlo {
+    height: 100%;
+    width: 100%;
+    background-color: var(--thirty-color);
+}
+
+.contact__github > h2 a, .contact__platzi > h2 a, .contact__twitter > h2 a,
+.contact__linkedin > h2 a, .contact__academlo > h2 a {
+    display: block;
+    color: #ffffff;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact__github {
+    grid-column: 1 / 6;
+    grid-row: 1 / 1;
+}
+
+.contact__platzi {
+    grid-column: 1 / 6;
+    grid-row: 2 / 2;
+}
+
+.contact__linkedin {
+    grid-column: 1 / 6;
+    grid-row: 3 / 3;
+}
+
+.contact__academlo {
+    grid-column: 1 / 6;
+    grid-row: 4 / 4;
+}
+
+.contact__twitter {
+    grid-column: 1 / 6;
+    grid-row: 5 / 5;
 }
