@@ -192,7 +192,6 @@ html {
 .about-me {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: 100%;
@@ -208,10 +207,12 @@ html {
     text-align: center;
     font-size: 1.2rem;
     font-family: var(--font-title);
+    margin: 10px auto;
 }
 .about-me__description {
     width: 90%;
-    height: 160px;
+    height: 50%;
+    margin: 100px auto;
 }
 .about-me__description__paragraph {
     font-family: var(--font-global);
@@ -221,7 +222,7 @@ html {
 }
 .about-me__description__image {
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 .about-me__description__image > img {
     width: 100%;
@@ -407,6 +408,7 @@ html {
     }
     .presentation, .skills,.contact-and-studies, 
     .about-me {
+        border: 1px solid black;
         height: 320px;
         margin: 0 auto;
     }
