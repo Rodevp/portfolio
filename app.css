@@ -295,7 +295,6 @@ html {
     grid-column: 1 / 6;
     grid-row: 5 / 5;
     margin-top: 180px;
-    margin-bottom: 40px;
 }
 
 .skills__tittle {
@@ -337,4 +336,23 @@ html {
     font-family: var(--font-title);
 }
 
-
+/*styles footer*/
+.footer {
+    background-color: var(--thirty-color);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    grid-column: 1 / 6;
+    grid-row: 7 / 7;
+    margin: 80px auto 0 auto;
+}
+.footer__pargraph-copy {
+    width: 90%;
+    height: 40px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: var(--font-global);
+}
