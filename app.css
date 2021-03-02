@@ -254,9 +254,8 @@ html {
 
 .contact__github > h2 a, .contact__platzi > h2 a, .contact__twitter > h2 a,
 .contact__linkedin > h2 a, .contact__academlo > h2 a {
-    color: #ffffff;
-    cursor: pointer;
     display: block;
+    color: #ffffff;
     font-family: var(--font-title);
     font-size: 1.2rem;
     text-align: center;
@@ -409,27 +408,16 @@ html {
     }
     .presentation, .skills,.contact-and-studies, 
     .about-me {
+        border: 1px solid black;
         height: 320px;
         margin: 0 auto;
     }
     .presentation {
         height: 220px;
     }
-    .presentation__title {
-        font-size: 1.5rem;
-    }
-    .presentation__mini_description-paragraph {
-        font-size: 1.2rem;
-    }
     .about-me {
         margin-top: 170px;
         flex-direction: row;
-    }
-    .about-me__title {
-        font-size: 1.5rem;
-    }
-    .about-me__description__paragraph {
-        font-size: 1.2rem;
     }
     .about-me__description__image {
         margin: 30px auto;
@@ -437,32 +425,6 @@ html {
     .contact-and-studies {
         gap: 2px;
         margin-top: 440px;
-    }
-    .contact__github > h2 a, .contact__platzi > h2 a,
-    .contact__academlo > h2 a {
-        font-size: 2rem;
-    }
-    .contact__twitter > h2 i, .contact__linkedin > h2 i,
-    .contact__github > h2 i {
-        font-size: 2rem;
-        width: 100px;
-        height: 100px;
-        margin: 15px auto;  
-    }
-    .contact__github:hover {
-        background-color: #000000;
-    } 
-    .contact__platzi:hover {
-        background-color: #98CA3F;
-    }
-    .contact__linkedin:hover {
-        background-color: #0A66C2;
-    }
-    .contact__academlo:hover {
-        background-color: #E84959;
-    }
-    .contact__twitter:hover {
-        background-color: #1DA1F2;
     }
     .skills {
         margin-top: 660px;

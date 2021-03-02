@@ -1,13 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="app.css" />
     <title>My-website</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <section class="wrapper">
+      <header class="header">
+        <h1 class="header__tittle">Rodevp</h1>
+        <nav class="header__nav" id="menu">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a href=""> Sobre mi </a>
+            </li>
+            <li class="header__list-item">
+              <a href=""> Estudios & Contacto </a>
+            </li>
+            <li class="header__list-item">
+              <a href=""> Skills </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="activator-menu">
+          <input type="checkbox" id="pitcher" class="pitcher" />
+          <label for="pitcher">
+            <span class="activator-menu-linea"></span>
+            <span class="activator-menu-linea"></span>
+            <span class="activator-menu-linea"></span>
+          </label>
+        </div>
+      </header>
+      <section class="presentation">
+        <h2 class="presentation__title">Hola ✌, me llamo Rodrigo 😀</h2>
+        <div class="presentation__mini_description">
+          <p class="presentation__mini_description-paragraph">
+            Soy programador web 👨‍💻. Y me gustaria ayudarte en cualquier proyecto
+            que desees, seria un placer para mi ayudarte a construir tu idea
+            mediante la programación. 🤖
+          </p>
+        </div>
+      </section>
+      <section class="about-me">
+        <div class="about-me__description">
+          <h2 class="about-me__title">Sobre mi</h2>
+          <p class="about-me__description__paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
+            quisquam sed consequuntur veritatis enim, quae ducimus autem
+            adipisci rerum eaque dolorem, eius est! Doloremque, debitis dolores
+            mollitia numquam earum asperiores.
+          </p>
+        </div>
+        <figure class="about-me__description__image">
+            <img src="./images/Web Developer_Flatline.svg" alt="imagen sobre programación">
+        </figure>
+      </section>
+      <section class="contact-and-studies">
+        <div class="contact__github">
+          <h2>
+            <a href="https://github.com/Rodevp?tab=repositories" >
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </h2>
+        </div>
+        <div class="contact__platzi">
+          <h2>
+            <a href="https://platzi.com/p/rodriguez17/">
+              Platzi
+            </a>
+          </h2>
+        </div>
+        <div class="contact__linkedin">
+          <h2>
+            <a href="https://www.linkedin.com/in/rodrigo-rodriguez-rodevp-046712181/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </h2>
+        </div>
+        <div class="contact__academlo">
+          <h2>
+            <a href="https://www.academlo.com/curso-programacion-web-full-stack">
+              Academlo
+            </a>
+          </h2> 
+        </div>
+        <div class="contact__twitter">
+           <h2>
+            <a href="https://twitter.com/rodevp">
+              <i class="fab fa-twitter"></i>
+            </a>
+           </h2>
+        </div>
+      </section>
+      <section class="skills">
+        <h2 class="skills__tittle">
+          Skills
+        </h2>
+        <div class="skills_itermediate">
+          <h2 class="skills_itermediate-tittle">
+            Itermedio: 
+          </h2>
+          <p class="skills_itermediate-js">
+            Java <i class="fab fa-js"></i> Script
+          </p>
+          <p class="skills_itermediate-html" >
+            Html <i class="fab fa-html5"></i>
+          </p>
+          <p class="skills_itermediate-react">
+            React js <i class="fab fa-react"></i>
+          </p>
+          <P class="skills_itermediate-py">
+            Python <i class="fab fa-python"></i>
+          </P>
+        </div>
+        <div class="Basic_intermediate">
+          <h2 class="Basic_intermediate-tittle">
+            Basicos: 
+          </h2>
+          <p class="Basic_intermediate-git">
+            Git <i class="fab fa-github-alt"></i>
+          </p>
+          <p class="Basic_intermediate-db">
+            Sql <i class="fas fa-database"></i>
+          </p>
+          <p class="Basic_intermediate-css">
+            Css <i class="fab fa-css3-alt"></i>
+          </p>
+          <p class="Basic_intermediate-structure">
+            Es. Datos<i class="fas fa-project-diagram"></i>
+          </p>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer__pargraph-copy">
+          &copy; Copyright 2021 - Creado por Rodrigo Rodriguez 👽
+        </p>
+      </footer>
+    </section>
+    <script src="app.js"></script>
+  </body>
 </html>
