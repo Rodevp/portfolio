@@ -56,7 +56,7 @@ function mappingHmaburguerMenu(items, screenSize) {
 
     });
 }
-mappingHmaburguerMenu(hamburguerLineaMenu);
+
 window.onscroll = (e) => {
     mappingHmaburguerMenu(hamburguerLineaMenu, header.offsetTop);
     if (header.offsetTop > 0) {
