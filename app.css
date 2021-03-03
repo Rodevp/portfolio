@@ -57,21 +57,34 @@ html {
 }
 
 .header__list {
-    background-color: blue;
+    background-color: var(--secundary-color);
     display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     height: 300px;
     position: relative;
     z-index: 1;
     list-style: none;
-    width: 0;
 }
 
 .header__list-item {
     height: 30%;
     width: 100%;
     opacity: 0;
+    text-align: center;
+}
+
+.header__list a {
+    border-bottom: 1px solid var(--global-color);
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    height: 50%;
+    width: 80%;
+    margin: 5px auto;
+    text-decoration: none;
+    font-family: var(--font-global);
 }
 
 /*animaciones*/
@@ -97,15 +110,12 @@ html {
 @keyframes move{
     60% {
         width: 200px;
-        background-color: blue;
     }
     90% {
         width: 350px;
-        background-color: blue;
     }
     100%{
         width: 400px;
-        background-color: blue;
     }
 }
 
@@ -153,6 +163,7 @@ html {
 .pitcher:checked ~ label .activator-menu-linea:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
+
 
 /*Presentation styles*/
 .presentation {

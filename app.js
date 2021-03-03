@@ -3,6 +3,9 @@ const CLASS_MENU = 'hamburguer-menu-animation';
 const menu = document.getElementById('menu');
 const menuItems = document.getElementsByClassName('header__list-item');
 const checkbox = document.getElementById('pitcher');
+const menuHeader = document.querySelector('.header__list');
+
+console.log(menuHeader);
 
 function mappingItemasClassAddOrRemove(arr) {
     const arrItems = [...arr];
@@ -29,4 +32,6 @@ checkbox.addEventListener('click', e => {
         menu.classList.remove(CLASS_MENU);
         mappingItemasClassAddOrRemove(menuItems);
     }
+    if ( checkbox.checked ) menuHeader.style.display = "block";
+    if ( !checkbox.checked ) menuHeader.style.display = "none";
 });
