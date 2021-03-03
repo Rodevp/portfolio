@@ -42,6 +42,18 @@ html {
     width: 100%;
 }
 
+/*scrooll class*/
+.change__header_scroll {
+    background-color: var(--secundary-color);
+    color: #ffffff;
+}
+
+.change__menu__hamburguer_scroll {
+    background-color: #ffffff;
+}
+
+/*end scroll*/
+
 .header__tittle {
     height: 100%;
     width: 40%;
