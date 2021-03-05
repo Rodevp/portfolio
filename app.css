@@ -401,7 +401,8 @@ html {
 
 .modal__message {
     background-color: #f4f4f4;
-    border: 1px solid black;
+    border: 1px solid var(--global-color);
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -426,6 +427,10 @@ html {
     font-size: 1.1rem;
 }
 .modal__button {
+    background-color: var(--secundary-color);
+    border-radius: 5px;
+    border-color: var(--secundary-color);
+    color: #ffffff;
     width: 35px;
     height: 40px;
     position: relative;
@@ -484,6 +489,19 @@ html {
     .contact__twitter {
         grid-column: 3 / 6;
         grid-row: 4 / 6;
+    }
+    .modal {
+        margin-top: -140vh;
+    }
+    .modal__message {
+        width: 80%;
+    }
+    .modal__paragraph {
+        margin: 25px auto;
+    }
+    .modal__button {
+        width: 100px;
+        left: 45%;
     }
 }
 
@@ -553,5 +571,16 @@ html {
     }
     .footer {
         margin-top: 760px;
+    }
+    .modal {
+        margin-top: -160vh;
+    }
+    .modal__message {
+        width: 50%;
+        height: 250px;
+    }
+    .modal__button {
+        width: 100px;
+        left: 45%;
     }
 }
