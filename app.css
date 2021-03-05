@@ -26,6 +26,7 @@ html {
     grid-auto-flow: row;
     height: 920px;
     width: 100%;
+    position: relative;
 }
 
 /*styles*/
@@ -42,6 +43,18 @@ html {
     width: 100%;
 }
 
+/*scrooll class*/
+.change__header_scroll {
+    background-color: var(--secundary-color);
+    color: #ffffff;
+}
+
+.change__menu__hamburguer_scroll {
+    background-color: #ffffff;
+}
+
+/*end scroll*/
+
 .header__tittle {
     height: 100%;
     width: 40%;
@@ -57,21 +70,34 @@ html {
 }
 
 .header__list {
-    background-color: blue;
+    background-color: var(--secundary-color);
     display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     height: 300px;
     position: relative;
     z-index: 1;
     list-style: none;
-    width: 0;
 }
 
 .header__list-item {
     height: 30%;
     width: 100%;
     opacity: 0;
+    text-align: center;
+}
+
+.header__list a {
+    border-bottom: 1px solid var(--global-color);
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    height: 50%;
+    width: 80%;
+    margin: 5px auto;
+    text-decoration: none;
+    font-family: var(--font-global);
 }
 
 /*animaciones*/
@@ -97,15 +123,12 @@ html {
 @keyframes move{
     60% {
         width: 200px;
-        background-color: blue;
     }
     90% {
         width: 350px;
-        background-color: blue;
     }
     100%{
         width: 400px;
-        background-color: blue;
     }
 }
 
@@ -154,6 +177,7 @@ html {
     transform: translateY(-9px) rotate(-45deg);
 }
 
+
 /*Presentation styles*/
 .presentation {
     display: flex;
@@ -168,6 +192,7 @@ html {
     grid-row: 2 / 2;
 
 }
+
 .presentation__title {
     border: 1px solid var(--global-color);
     height: 50px;
@@ -176,11 +201,13 @@ html {
     padding: 5px 5px 10px 5px;
     font-family: var(--font-title);
 }
+
 .presentation__mini_description {
     border-bottom: 1px solid var(--global-color);
     height: 100%;
     width: 90%;
 }
+
 .presentation__mini_description-paragraph {
     text-align: center;
     padding-top: 20px;
@@ -350,6 +377,7 @@ html {
     grid-row: 7 / 7;
     margin: 80px auto 0 auto;
 }
+
 .footer__pargraph-copy {
     width: 90%;
     height: 40px;
@@ -357,6 +385,68 @@ html {
     text-align: center;
     font-size: 0.9rem;
     font-family: var(--font-global);
+}
+
+/*modal styles*/
+.modal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    margin-top: -120vh;
+    transform: translateX(-100vw);
+}
+
+.modal__message {
+    background-color: #f4f4f4;
+    border: 1px solid var(--global-color);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 300px;
+    margin-top: 10%;
+    position: relative;
+}
+.modal__title {
+    width: 90%;
+    height: 20%;
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+}
+.modal__paragraph {
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    font-family: var(--font-global);
+    font-size: 1.1rem;
+}
+.modal__button {
+    background-color: var(--secundary-color);
+    border-radius: 5px;
+    border-color: var(--secundary-color);
+    color: #ffffff;
+    width: 35px;
+    height: 40px;
+    position: relative;
+    left: 48%;
+    bottom: 95%;
+}
+
+.modal__animation {
+    animation: modal_view 1s ease-in-out forwards;
+}
+
+/*animation modal*/
+@keyframes modal_view{
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /*media query*/
@@ -400,6 +490,19 @@ html {
         grid-column: 3 / 6;
         grid-row: 4 / 6;
     }
+    .modal {
+        margin-top: -140vh;
+    }
+    .modal__message {
+        width: 80%;
+    }
+    .modal__paragraph {
+        margin: 25px auto;
+    }
+    .modal__button {
+        width: 100px;
+        left: 45%;
+    }
 }
 
 @media only screen and (min-width: 920px) {
@@ -408,16 +511,27 @@ html {
     }
     .presentation, .skills,.contact-and-studies, 
     .about-me {
-        border: 1px solid black;
         height: 320px;
         margin: 0 auto;
     }
     .presentation {
         height: 220px;
     }
+    .presentation__title {
+        font-size: 1.5rem;
+    }
+    .presentation__mini_description-paragraph {
+        font-size: 1.2rem;
+    }
     .about-me {
         margin-top: 170px;
         flex-direction: row;
+    }
+    .about-me__title {
+        font-size: 1.5rem;
+    }
+    .about-me__description__paragraph {
+        font-size: 1.2rem;
     }
     .about-me__description__image {
         margin: 30px auto;
@@ -426,10 +540,47 @@ html {
         gap: 2px;
         margin-top: 440px;
     }
+    .contact__github > h2 a, .contact__platzi > h2 a,
+    .contact__academlo > h2 a {
+        font-size: 2rem;
+    }
+    .contact__twitter > h2 i, .contact__linkedin > h2 i,
+    .contact__github > h2 i {
+        font-size: 2rem;
+        width: 100px;
+        height: 100px;
+        margin: 15px auto;  
+    }
+    .contact__github:hover {
+        background-color: #000000;
+    } 
+    .contact__platzi:hover {
+        background-color: #98CA3F;
+    }
+    .contact__linkedin:hover {
+        background-color: #0A66C2;
+    }
+    .contact__academlo:hover {
+        background-color: #E84959;
+    }
+    .contact__twitter:hover {
+        background-color: #1DA1F2;
+    }
     .skills {
         margin-top: 660px;
     }
     .footer {
         margin-top: 760px;
+    }
+    .modal {
+        margin-top: -160vh;
+    }
+    .modal__message {
+        width: 50%;
+        height: 250px;
+    }
+    .modal__button {
+        width: 100px;
+        left: 45%;
     }
 }
