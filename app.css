@@ -26,6 +26,7 @@ html {
     grid-auto-flow: row;
     height: 920px;
     width: 100%;
+    position: relative;
 }
 
 /*styles*/
@@ -191,6 +192,7 @@ html {
     grid-row: 2 / 2;
 
 }
+
 .presentation__title {
     border: 1px solid var(--global-color);
     height: 50px;
@@ -199,11 +201,13 @@ html {
     padding: 5px 5px 10px 5px;
     font-family: var(--font-title);
 }
+
 .presentation__mini_description {
     border-bottom: 1px solid var(--global-color);
     height: 100%;
     width: 90%;
 }
+
 .presentation__mini_description-paragraph {
     text-align: center;
     padding-top: 20px;
@@ -373,6 +377,7 @@ html {
     grid-row: 7 / 7;
     margin: 80px auto 0 auto;
 }
+
 .footer__pargraph-copy {
     width: 90%;
     height: 40px;
@@ -380,6 +385,63 @@ html {
     text-align: center;
     font-size: 0.9rem;
     font-family: var(--font-global);
+}
+
+/*modal styles*/
+.modal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    margin-top: -120vh;
+    transform: translateX(-100vw);
+}
+
+.modal__message {
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 300px;
+    margin-top: 10%;
+    position: relative;
+}
+.modal__title {
+    width: 90%;
+    height: 20%;
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+}
+.modal__paragraph {
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    font-family: var(--font-global);
+    font-size: 1.1rem;
+}
+.modal__button {
+    width: 35px;
+    height: 40px;
+    position: relative;
+    left: 48%;
+    bottom: 95%;
+}
+
+.modal__animation {
+    animation: modal_view 1s ease-in-out forwards;
+}
+
+/*animation modal*/
+@keyframes modal_view{
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /*media query*/
