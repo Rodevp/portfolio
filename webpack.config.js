@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const copyPlugin = require('copy-webpack-plugin');
+const cssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const terserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     entry: './src/app.js',
@@ -47,4 +49,11 @@ module.exports = {
             ]
         })
     ],
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new cssMinimizerPlugin(),
+            new terserPlugin(),
+        ]
+    }
 }
