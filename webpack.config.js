@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const copyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js',
@@ -25,17 +25,17 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: [miniCssExtractPlugin.loader, 'css-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
             }
         ]
     },
     plugins: [
-        new htmlWebpackPlugin({
+        new HtmlWebpackPlugin({
             inject: true,
             template: './src/index.html',
             filename: './index.html'
         }),
-        new miniCssExtractPlugin({
+        new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
         }),
         new copyPlugin({
