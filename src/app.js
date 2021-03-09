@@ -1,3 +1,5 @@
+import './app.css';
+
 const CLASS_MENU = 'hamburguer-menu-animation';
 
 const menu = document.getElementById('menu');
