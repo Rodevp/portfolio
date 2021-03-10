@@ -32,7 +32,7 @@
     height: 100px;
     width: 60%;
     position: relative;
-    transform: translateX(100vw);
+    transform: translateX(-100vw);
 }
 
 .header__list {

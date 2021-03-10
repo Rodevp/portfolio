@@ -18,6 +18,22 @@ btnCloseModal.addEventListener('click', () => {
     modal.classList.remove('modal__animation');
 });
 
+function mappingItemasClassAddOrRemove(arr, nameClassForItem, containClass){
+    const arrItems = [...arr];
+    arrItems.forEach(item => {
+        if(!item.classList.contains(containClass)
+            && checkbox.checked
+        ) {
+            item.classList.add(nameClassForItem);
+        }
+        if (item.classList.contains(containClass)
+            && !checkbox.checked
+        ) {
+            item.classList.remove(nameClassForItem);
+        }
+    });
+}
+
 checkbox.addEventListener('click', e => {
     if ( checkbox.checked && !menu.classList.contains(CLASS_MENU) ) {
         menu.classList.add(CLASS_MENU);
@@ -25,7 +41,8 @@ checkbox.addEventListener('click', e => {
     if ( !checkbox.checked && menu.classList.contains(CLASS_MENU) ) {
         menu.classList.remove(CLASS_MENU);
     }
-  
+    if ( checkbox.checked ) menuHeader.style.display = "block";
+    if ( !checkbox.checked ) menuHeader.style.display = "none";
 });
 
 function mappingHmaburguerMenu(items, screenSize) {
