@@ -124,11 +124,11 @@
         margin-top: 760px;
     }
     .modal {
-        margin-top: -160vh;
+        margin-top: -280vh;
     }
     .modal__message {
-        width: 50%;
-        height: 250px;
+        width: 80%;
+        height: 280px;
     }
     .modal__button {
         width: 100px;
