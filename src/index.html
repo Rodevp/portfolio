@@ -15,34 +15,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./app.css">
     <title>My-website</title>
   </head>
   <body>
+    <header class="header" id="header">
+      <h1 class="header__tittle ">Rodevp</h1>
+      <nav class="header__nav" id="menu">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="#about_me"> Sobre mi </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#contact_and_studies"> Estudios & Contacto </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#skills"> Skills </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="activator-menu">
+        <input type="checkbox" id="pitcher" class="pitcher" />
+        <label for="pitcher">
+          <span class="activator-menu-linea"></span>
+          <span class="activator-menu-linea"></span>
+          <span class="activator-menu-linea"></span>
+        </label>
+      </div>
+    </header>
     <section class="wrapper">
-      <header class="header" id="header">
-        <h1 class="header__tittle">Rodevp</h1>
-        <nav class="header__nav" id="menu">
-          <ul class="header__list">
-            <li class="header__list-item">
-              <a href="#about_me"> Sobre mi </a>
-            </li>
-            <li class="header__list-item">
-              <a href="#contact_and_studies"> Estudios & Contacto </a>
-            </li>
-            <li class="header__list-item">
-              <a href="#skills"> Skills </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="activator-menu">
-          <input type="checkbox" id="pitcher" class="pitcher" />
-          <label for="pitcher">
-            <span class="activator-menu-linea"></span>
-            <span class="activator-menu-linea"></span>
-            <span class="activator-menu-linea"></span>
-          </label>
-        </div>
-      </header>
       <section class="presentation" id="presentation">
         <h2 class="presentation__title">Hola ✌, me llamo Rodrigo 😀</h2>
         <div class="presentation__mini_description">
@@ -163,5 +164,6 @@
         </button>
       </section>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
