@@ -32,24 +32,23 @@
     height: 100px;
     width: 60%;
     position: relative;
+    transform: translateX(100vw);
 }
 
 .header__list {
     background-color: var(--secundary-color);
     display: flex;
-    display: none;
     flex-direction: column;
     justify-content: space-between;
     height: 300px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     list-style: none;
 }
 
 .header__list-item {
     height: 30%;
     width: 100%;
-    opacity: 0;
     text-align: center;
 }
 
@@ -70,31 +69,10 @@
     animation: move 1s ease-in-out forwards;
 }
 
-.header__list--item-view-animation {
-    animation: views-items 1s ease-in-out forwards;
-}
-@keyframes views-items{
-    60%{
-        opacity: 0.5;
-    }
-    90%{
-        opacity: 0.8;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
 @keyframes move{
-    60% {
-        width: 200px;
-    }
-    90% {
-        width: 350px;
-    }
-    100%{
-        width: 400px;
-    }
+   100% {
+       transform: translateX(0);
+   }
 }
 
 /*hamburguer menu*/
