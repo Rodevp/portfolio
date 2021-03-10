@@ -14,7 +14,7 @@
         margin-bottom: 20px;
         padding: 25px auto;
     }
-
+    
     .contact__github {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
@@ -114,7 +114,11 @@
         background-color: #1DA1F2;
     }
     .skills {
+        width: 90%;
         margin-top: 660px;
+    }
+    .skills__tittle {
+        margin-bottom: 45px;
     }
     .footer {
         margin-top: 760px;
