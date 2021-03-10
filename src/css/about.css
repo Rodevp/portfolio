@@ -1,0 +1,40 @@
+/*styles about me*/
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 6;
+    grid-row: 3 / 3;
+    margin-top: -30px;
+}
+.about-me__title {
+    border: 1px solid var(--global-color);
+    height: 40px;
+    width: 90%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-title);
+    margin: 10px auto;
+}
+.about-me__description {
+    width: 90%;
+    height: 50%;
+    margin: 100px auto;
+}
+.about-me__description__paragraph {
+    font-family: var(--font-global);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 5px 5px 10px 5px;
+}
+.about-me__description__image {
+    width: 100%;
+    height: 80%;
+}
+.about-me__description__image > img {
+    width: 100%;
+    height: 100%;
+}
