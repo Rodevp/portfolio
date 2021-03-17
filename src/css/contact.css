@@ -65,3 +65,24 @@
 .contact__twitter {
     grid-area: twitter;
 }
+
+@media (min-width: 720px) {
+    .contact-and-studies {
+        height: 350px;
+        margin-bottom: 10px;
+    }
+    .contact-and-studies-title {
+        height: 60px;
+        font-size: 1.2rem;
+        padding: 10px 0;   
+    }
+    .contact-and-studies-grid {
+        gap: 10px;
+    }
+    .contact__github > h2 a, .contact__platzi > h2 a, .contact__twitter > h2 a,
+    .contact__linkedin > h2 a, .contact__academlo > h2 a {
+        height: 45px;
+        font-size: 1.4rem;
+        padding: 5px 0;
+    }
+}
