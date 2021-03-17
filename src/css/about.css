@@ -6,9 +6,6 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    grid-column: 1 / 6;
-    grid-row: 3 / 3;
-    margin-top: -30px;
 }
 .about-me__title {
     border: 1px solid var(--global-color);
