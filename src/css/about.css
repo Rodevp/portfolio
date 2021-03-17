@@ -60,3 +60,27 @@
         height: 180px;
     }
 }
+@media (min-width: 1020px) {
+    .about-me {
+        height: 500px;
+        flex-direction: row;
+        width: 100%;
+    }
+    .about-me__title {
+        height: 80px;
+        font-size: 1.4rem;
+        padding: 15px 0;
+    }
+    .about-me__description {
+        height: 340px;
+        width: 50%;
+    }
+    .about-me__description__paragraph {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .about-me__description__image {
+        width: 40%;
+        height: 280px;
+    }
+}
