@@ -47,3 +47,29 @@
 .skills_itermediate-tittle, .Basic_intermediate-tittle {
     font-family: var(--font-title);
 }
+
+@media (min-width: 720px) {
+    .skills {
+        width: 98%;
+        height: 500px;
+    }
+    .skills__tittle {
+        height: 60px;
+        font-size: 1.2rem;
+        margin-bottom: 18px;
+        padding: 10px 0;
+    }
+    .skills_itermediate-py,.skills_itermediate-react,
+    .skills_itermediate-node{
+        font-size: 1.1rem;
+        padding: 15px 0;
+    }
+    .Basic_intermediate-git, .Basic_intermediate-db,
+    .Basic_intermediate-css, .Basic_intermediate-structure, .Basic_intermediate-tittle {
+        font-size: 1rem;
+        padding: 15px 0;
+    }
+    .skills_itermediate-tittle, .Basic_intermediate-tittle {
+        font-size: 1.1rem;
+    }
+}
