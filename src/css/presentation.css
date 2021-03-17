@@ -48,3 +48,20 @@
         font-size: 1rem;
     }
 }
+
+@media (min-width: 1020px) {
+    .presentation  {
+        height: 500px;
+    }
+    .presentation__title {
+        height: 80px;
+        font-size: 1.4rem;
+        padding: 20px 0;
+    }
+    .presentation__mini_description {
+        height: 240px;
+    }
+    .presentation__mini_description-paragraph {
+        font-size: 1.2rem;
+    }
+}
