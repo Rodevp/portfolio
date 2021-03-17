@@ -86,3 +86,33 @@
         padding: 5px 0;
     }
 }
+
+@media (min-width: 1020px) {
+    .contact-and-studies {
+        height: 500px;
+    }
+    .contact-and-studies-grid {
+        grid-template-areas: "github github platzi platzi"
+                             "linkedin linkedin linkedin linkedin"
+                             "academlo academlo twitter twitter";
+    }
+    .contact-and-studies-title {
+        height: 80px;
+        font-size: 1.4rem;
+        padding: 15px 0;   
+    }
+    .contact-and-studies-grid {
+        gap: 8px;
+    }
+    .contact__github > h2 a, .contact__platzi > h2 a, .contact__twitter > h2 a,
+    .contact__linkedin > h2 a, .contact__academlo > h2 a {
+        height: 120px;
+        padding: 10px 0;
+        font-size: 1.8rem;
+    }
+    .contact__github > h2 a i, .contact__twitter > h2 a i,
+    .contact__linkedin > h2 a i {
+        padding: 15px 0;
+        font-size: 1.8rem;
+    }
+}
