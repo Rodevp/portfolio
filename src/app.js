@@ -1,4 +1,3 @@
-
 const CLASS_MENU = 'hamburguer-menu-animation';
 
 const menu = document.getElementById('menu');
@@ -54,7 +53,6 @@ function mappingHmaburguerMenu(items, screenSize) {
         if (screenSize === 0) {
             item.style.backgroundColor = "black";
         }
-
     });
 }
 
