@@ -1,11 +1,11 @@
 .skills {
     border-bottom: 1px solid var(--global-color);
     display: flex;
+    height: 400px;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
     width: 100%;
-    grid-column: 1 / 6;
-    grid-row: 5 / 5;
 }
 
 .skills__tittle {
@@ -14,32 +14,35 @@
     width: 90%;
     text-align: center;
     font-family: var(--font-title);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 15px;
 }
 .skills_itermediate, .Basic_intermediate {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     height: 50%;
-    width: 90%;
+    width: 100%;
 }
 
 .skills_itermediate-py,.skills_itermediate-react,
-.skills_itermediate-node {
-    width: 18%;
+.skills_itermediate-node, .skills_itermediate-tittle {
     height: 100%;
     text-align: center;
-    font-size: 0.8;
+    font-size: 0.9;
     font-family: var(--font-global);
+    padding: 10px 0;
+    width: 90%;
 }
 
 .Basic_intermediate-git, .Basic_intermediate-db,
-.Basic_intermediate-css, .Basic_intermediate-structure {
-    width: 22%;
+.Basic_intermediate-css, .Basic_intermediate-structure, .Basic_intermediate-tittle {
     height: 100%;
     text-align: center;
-    font-size: 0.8;
+    font-size: 0.9;
     font-family: var(--font-global);
+    width: 90%;
 }
 .skills_itermediate-tittle, .Basic_intermediate-tittle {
     font-family: var(--font-title);
