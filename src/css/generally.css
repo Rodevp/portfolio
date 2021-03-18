@@ -1,0 +1,29 @@
+:root {
+    --secundary-color: #52057b;
+    --thirty-color: #892cdc;
+    --global-color: #bc6ff1;
+    --font-title: 'Ubuntu', sans-serif;
+    --font-global: 'Rubik', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*wrapper*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+

@@ -1,5 +1,3 @@
-import './app.css';
-
 const CLASS_MENU = 'hamburguer-menu-animation';
 
 const menu = document.getElementById('menu');
@@ -38,19 +36,9 @@ function mappingItemasClassAddOrRemove(arr, nameClassForItem, containClass){
 checkbox.addEventListener('click', e => {
     if ( checkbox.checked && !menu.classList.contains(CLASS_MENU) ) {
         menu.classList.add(CLASS_MENU);
-        mappingItemasClassAddOrRemove(
-            menuItems,
-            'header__list--item-view-animation',
-            'header__list--item-view-animation'
-        );
     };
     if ( !checkbox.checked && menu.classList.contains(CLASS_MENU) ) {
         menu.classList.remove(CLASS_MENU);
-        mappingItemasClassAddOrRemove(
-            menuItems,
-            'header__list--item-view-animation',
-            'header__list--item-view-animation'
-        );
     }
     if ( checkbox.checked ) menuHeader.style.display = "block";
     if ( !checkbox.checked ) menuHeader.style.display = "none";
@@ -65,7 +53,6 @@ function mappingHmaburguerMenu(items, screenSize) {
         if (screenSize === 0) {
             item.style.backgroundColor = "black";
         }
-
     });
 }
 

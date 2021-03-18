@@ -1,0 +1,19 @@
+/*styles footer*/
+.footer {
+    background-color: var(--thirty-color);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer__pargraph-copy {
+    color: #ffffff;
+    height: 40px;
+    width: 90%;
+    font-size: 0.9rem;
+    font-family: var(--font-global);
+    text-align: center;
+    margin: 10% auto;
+}
