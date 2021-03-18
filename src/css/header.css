@@ -1,0 +1,122 @@
+/*header-styles*/
+.header {
+    border-bottom: 1px solid var(--secundary-color);
+    display: flex;
+    height: 60px;
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 3;    
+}
+
+/*scrooll class*/
+.change__header_scroll {
+    background-color: var(--secundary-color);
+    color: #ffffff;
+}
+
+.change__menu__hamburguer_scroll {
+    background-color: #ffffff;
+}
+
+/*end scroll*/
+.header__tittle {
+    height: 50px;
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-title);
+    padding: 10px 0;
+}
+
+.header__nav {
+    height: 100px;
+    width: 50%;
+    position: relative;
+    transform: translateX(-100vw);
+}
+
+.header__list {
+    background-color: var(--secundary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    position: relative;
+    z-index: 2;
+    list-style: none;
+}
+
+.header__list-item {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.header__list a {
+    border-bottom: 1px solid var(--global-color);
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    height: 50%;
+    width: 80%;
+    margin: 5px auto;
+    text-decoration: none;
+    font-family: var(--font-global);
+}
+
+/*animaciones*/
+.hamburguer-menu-animation {
+    animation: move 1s ease-in-out forwards;
+}
+
+@keyframes move{
+   100% {
+       transform: translateX(0);
+   }
+}
+
+/*hamburguer menu*/
+.activator-menu {
+    width: 30px;
+    height: 20px;
+    margin: 100px auto;
+    position: relative;
+    z-index: 2;
+}
+
+.pitcher {
+    position: absolute;
+    display: none;
+}
+
+.activator-menu > label {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    height: 100%;  
+    justify-content: space-between;
+    position: relative;
+    top: -80px;
+    right: 18px;
+}
+
+.activator-menu-linea {
+    background-color: #000000;
+    height: 2px;
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+    transition: all 0.2s;
+}
+
+.pitcher:checked ~ label .activator-menu-linea:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.pitcher:checked ~ label .activator-menu-linea:nth-child(2) {
+    opacity: 0;
+}
+
+.pitcher:checked ~ label .activator-menu-linea:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}

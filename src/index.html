@@ -15,34 +15,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./app.css">
     <title>My-website</title>
   </head>
   <body>
+    <header class="header" id="header">
+      <h1 class="header__tittle ">Rodevp v 0.0.2</h1>
+      <nav class="header__nav" id="menu">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="#about_me"> Sobre mi </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#contact_and_studies"> Estudios & Contacto </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#skills"> Skills </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="activator-menu">
+        <input type="checkbox" id="pitcher" class="pitcher" />
+        <label for="pitcher">
+          <span class="activator-menu-linea"></span>
+          <span class="activator-menu-linea"></span>
+          <span class="activator-menu-linea"></span>
+        </label>
+      </div>
+    </header>
     <section class="wrapper">
-      <header class="header" id="header">
-        <h1 class="header__tittle">Rodevp</h1>
-        <nav class="header__nav" id="menu">
-          <ul class="header__list">
-            <li class="header__list-item">
-              <a href="#about_me"> Sobre mi </a>
-            </li>
-            <li class="header__list-item">
-              <a href="#contact_and_studies"> Estudios & Contacto </a>
-            </li>
-            <li class="header__list-item">
-              <a href="#skills"> Skills </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="activator-menu">
-          <input type="checkbox" id="pitcher" class="pitcher" />
-          <label for="pitcher">
-            <span class="activator-menu-linea"></span>
-            <span class="activator-menu-linea"></span>
-            <span class="activator-menu-linea"></span>
-          </label>
-        </div>
-      </header>
       <section class="presentation" id="presentation">
         <h2 class="presentation__title">Hola ✌, me llamo Rodrigo 😀</h2>
         <div class="presentation__mini_description">
@@ -57,9 +58,9 @@
         <div class="about-me__description">
           <h2 class="about-me__title">Sobre mi</h2>
           <p class="about-me__description__paragraph">
-          Soy un programador autodidacta y afisionado a las matemáticas.
+          Soy un programador autodidacta y aficionado a las matemáticas.
           Tengo 20 años, mis pasatiempos son jugar videojuegos, prácticar matemáticas, programar y jugar volley
-          ball. Mis intereses son conocer más del backend, y ciencias de datos. 
+          ball. Mis intereses son conocer más del frontend, y ciencias de datos. 
           </p>
         </div>
         <figure class="about-me__description__image">
@@ -67,40 +68,45 @@
         </figure>
       </section>
       <section class="contact-and-studies" id="contact_and_studies">
-        <div class="contact__github">
-          <h2>
-            <a href="https://github.com/Rodevp?tab=repositories" >
-              <i class="fab fa-github-alt"></i>
-            </a>
-          </h2>
-        </div>
-        <div class="contact__platzi">
-          <h2>
-            <a href="https://platzi.com/p/rodriguez17/">
-              Platzi
-            </a>
-          </h2>
-        </div>
-        <div class="contact__linkedin">
-          <h2>
-            <a href="https://www.linkedin.com/in/rodrigo-rodriguez-rodevp-046712181/">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </h2>
-        </div>
-        <div class="contact__academlo">
-          <h2>
-            <a href="https://www.academlo.com/curso-programacion-web-full-stack">
-              Academlo
-            </a>
-          </h2> 
-        </div>
-        <div class="contact__twitter">
-           <h2>
-            <a href="https://twitter.com/rodevp">
-              <i class="fab fa-twitter"></i>
-            </a>
-           </h2>
+        <h2 class="contact-and-studies-title">
+          Contacto y estudios
+        </h2>
+        <div class="contact-and-studies-grid">
+          <div class="contact__github">
+            <h2>
+              <a href="https://github.com/Rodevp?tab=repositories" >
+                <i class="fab fa-github-alt"></i>
+              </a>
+            </h2>
+          </div>
+          <div class="contact__platzi">
+            <h2>
+              <a href="https://platzi.com/p/rodriguez17/">
+                Platzi
+              </a>
+            </h2>
+          </div>
+          <div class="contact__linkedin">
+            <h2>
+              <a href="https://www.linkedin.com/in/rodrigo-rodriguez-rodevp-046712181/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </h2>
+          </div>
+          <div class="contact__academlo">
+            <h2>
+              <a href="https://www.academlo.com/curso-programacion-web-full-stack">
+                Academlo
+              </a>
+            </h2> 
+          </div>
+          <div class="contact__twitter">
+             <h2>
+              <a href="https://twitter.com/rodevp">
+                <i class="fab fa-twitter"></i>
+              </a>
+             </h2>
+          </div>
         </div>
       </section>
       <section class="skills" id="skills">
@@ -111,11 +117,8 @@
           <h2 class="skills_itermediate-tittle">
             Intermedio: 
           </h2>
-          <p class="skills_itermediate-js">
-            Java <i class="fab fa-js"></i> Script
-          </p>
-          <p class="skills_itermediate-html" >
-            Html <i class="fab fa-html5"></i>
+          <p class="skills_itermediate-node" >
+            Node js <i class="fab fa-node-js"></i>
           </p>
           <p class="skills_itermediate-react">
             React js <i class="fab fa-react"></i>
@@ -137,17 +140,14 @@
           <p class="Basic_intermediate-css">
             Css <i class="fab fa-css3-alt"></i>
           </p>
-          <p class="Basic_intermediate-structure">
-            Es. Datos<i class="fas fa-project-diagram"></i>
-          </p>
         </div>
       </section>
-      <footer class="footer">
-        <p class="footer__pargraph-copy">
-          &copy; Copyright 2021 - Creado por Rodrigo Rodriguez 👽
-        </p>
-      </footer>
     </section>
+    <footer class="footer">
+      <p class="footer__pargraph-copy">
+        &copy; Copyright 2021 - Creado por Rodrigo Rodriguez 👽
+      </p>
+    </footer>
     <div class="modal" id="modal">
       <section class="modal__message">
         <h1 class="modal__title">
@@ -163,5 +163,6 @@
         </button>
       </section>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
