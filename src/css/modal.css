@@ -7,7 +7,7 @@
     height: 100vh;
     position: fixed;
     z-index: 1;
-    margin-top: -1800px;
+    margin-top: -1500px;
     transform: translateX(-100vw);
 }
 

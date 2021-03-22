@@ -4,6 +4,7 @@
     height: 400px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
     width: 100%;
 }
@@ -17,35 +18,71 @@
     font-size: 1.1rem;
     margin-bottom: 15px;
 }
-.skills_itermediate, .Basic_intermediate {
-    display: flex;
+
+.skills_container {
+    display: flex; 
     flex-direction: column;
+    height: 250px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.logo-skill-container {
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50%;
+    height: 40%;
     width: 100%;
+    overflow: hidden;
 }
 
-.skills_itermediate-py,.skills_itermediate-react,
-.skills_itermediate-node, .skills_itermediate-tittle {
-    height: 100%;
+.node, .react, .py, .git, .db, .css {
+    display: block;
+    height: 100px;
+    width: 150px;
     text-align: center;
-    font-size: 0.9;
+    padding: 40px 0;
     font-family: var(--font-global);
-    padding: 10px 0;
-    width: 90%;
+    font-size: 1rem;
+}
+.node {
+    color: #54CE00;
+}
+.react, .css {
+    color: #00D8FF;
+}
+.py {
+    color: #007FF4;
+}
+.git {
+    color: #F05033;
+}
+.db {
+    color: #fcf338;
 }
 
-.Basic_intermediate-git, .Basic_intermediate-db,
-.Basic_intermediate-css, .Basic_intermediate-structure, .Basic_intermediate-tittle {
-    height: 100%;
-    text-align: center;
-    font-size: 0.9;
-    font-family: var(--font-global);
-    width: 90%;
+.logo--one {
+    animation: move 60s linear infinite;
+    transform: translateX(600px);
 }
-.skills_itermediate-tittle, .Basic_intermediate-tittle {
-    font-family: var(--font-title);
+.logo--two {
+    animation: move 60s linear infinite;
+    transform: translateX(600px);
+}
+.logo--three {
+    animation: move 60s linear infinite;
+    transform: translateX(600px);
+}
+
+
+/*animation*/
+@keyframes move {
+    10% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(-450%);
+    }
 }
 
 @media (min-width: 720px) {
@@ -59,64 +96,9 @@
         margin-bottom: 18px;
         padding: 10px 0;
     }
-    .skills_itermediate-py,.skills_itermediate-react,
-    .skills_itermediate-node{
-        font-size: 1.1rem;
-        padding: 15px 0;
-    }
-    .Basic_intermediate-git, .Basic_intermediate-db,
-    .Basic_intermediate-css, .Basic_intermediate-structure {
-        font-size: 1rem;
-        padding: 15px 0;
-    }
-    .skills_itermediate-tittle, .Basic_intermediate-tittle {
-        font-size: 1.1rem;
-    }
 }
 @media (min-width: 1020px) {
     .skills {
         height: 550px;
     }
-    .skills_itermediate, .Basic_intermediate {
-        flex-direction: row;
-    }
-    .skills_itermediate-tittle, .Basic_intermediate-tittle {
-        font-size: 1.5rem;
-        padding: 90px 0;
-    }
-    .skills_itermediate-py,.skills_itermediate-react,
-    .skills_itermediate-node{
-        font-size: 1.5rem;
-        padding: 90px 0;   
-    }
-    .skills_itermediate-py i,.skills_itermediate-react i,
-    .skills_itermediate-node i{
-        font-size: 1.8rem;
-    }
-    .Basic_intermediate-git, .Basic_intermediate-db,
-    .Basic_intermediate-css, .Basic_intermediate-structure {
-        font-size: 1.5rem;
-        padding: 90px 0; 
-    }
-    .Basic_intermediate-git i, .Basic_intermediate-db i,
-    .Basic_intermediate-css i, .Basic_intermediate-structure i {
-        font-size: 1.8rem;
-    }
-    /*animation*/
-    .skills_itermediate-node:hover, .skills_itermediate-node i:hover {
-        color: #54CE00;
-    }
-    .skills_itermediate-react:hover, .skills_itermediate-react i:hover, .Basic_intermediate-css:hover {
-        color: #00D8FF;
-    }
-    .skills_itermediate-py:hover {
-        color: #007FF4;
-    }
-    .skills_itermediate-py i:hover, .Basic_intermediate-db:hover {
-        color: #FFC727;
-    }
-    .Basic_intermediate-git:hover {
-        color: #F05033;
-    }
-
 }

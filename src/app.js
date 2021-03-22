@@ -1,3 +1,5 @@
+//import './app.css';
+
 const CLASS_MENU = 'hamburguer-menu-animation';
 
 const menu = document.getElementById('menu');
@@ -6,16 +8,7 @@ const checkbox = document.getElementById('pitcher');
 const menuHeader = document.querySelector('.header__list');
 const header = document.getElementById('header');
 const hamburguerLineaMenu = document.getElementsByClassName('activator-menu-linea');
-const modal = document.getElementById('modal');
-const btnCloseModal = document.getElementById('close_modal');
 
-setTimeout(() => {
-    modal.classList.add('modal__animation');
-}, 1000)
-
-btnCloseModal.addEventListener('click', () => {
-    modal.classList.remove('modal__animation');
-});
 
 function mappingItemasClassAddOrRemove(arr, nameClassForItem, containClass){
     const arrItems = [...arr];
