@@ -93,9 +93,27 @@
         margin-bottom: 18px;
         padding: 10px 0;
     }
+    .logo--one, .logo--two {
+        animation-duration: 30s;
+    }
+    .logo--three {
+        animation-duration: 30.1s;
+    }
+    .node, .react, .py, .git, .db, .css {
+        font-size: 1.4rem;
+    }
 }
 @media (min-width: 1020px) {
     .skills {
         height: 550px;
+    }
+    .logo--one, .logo--two {
+        animation-duration: 40s;
+    }
+    .logo--three {
+        animation-duration: 40.1s;
+    }
+    .node, .react, .py, .git, .db, .css {
+        font-size: 1.6rem;
     }
 }
