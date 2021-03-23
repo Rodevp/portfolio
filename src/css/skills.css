@@ -43,7 +43,7 @@
     text-align: center;
     padding: 40px 0;
     font-family: var(--font-global);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .node {
     color: #54CE00;
@@ -62,26 +62,23 @@
 }
 
 .logo--one {
-    animation: move 60s linear infinite;
-    transform: translateX(600px);
+    animation: move 20s infinite;
+    transform: translateX(100vw);
 }
 .logo--two {
-    animation: move 60s linear infinite;
-    transform: translateX(600px);
-}
-.logo--three {
-    animation: move 60s linear infinite;
-    transform: translateX(600px);
+    animation: move 20s infinite;
+    transform: translateX(100vw);
 }
 
+.logo--three {
+    animation: move 20.1s infinite;
+    transform: translateX(100vw);
+}
 
 /*animation*/
 @keyframes move {
-    10% {
-        transform: translateX(-150%);
-    }
     100% {
-        transform: translateX(-450%);
+        transform: translateX(-100vw);
     }
 }
 
