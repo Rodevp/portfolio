@@ -33,18 +33,21 @@
     height: 100px;
     width: 50%;
     position: relative;
-    transform: translateX(-100vw);
 }
 
 .header__list {
     background-color: var(--secundary-color);
+    clip-path: polygon(100% 0, 0 0, 100% 0, 100% 100%);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: 300px;
-    position: relative;
-    z-index: 2;
+    flex-direction: column;
     list-style: none;
+    justify-content: space-between;
+    position: relative;
+    width: 300px;
+    right: 100px;
+    top: 10px;
+    z-index: 2;
 }
 
 .header__list-item {
@@ -66,13 +69,13 @@
 }
 
 /*animaciones*/
-.hamburguer-menu-animation {
-    animation: move 1s ease-in-out forwards;
+.hamburguer-menu-animation-view {
+    animation: view 2s ease-in-out forwards;
 }
 
-@keyframes move{
+@keyframes view{
    100% {
-       transform: translateX(0);
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
    }
 }
 

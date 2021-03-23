@@ -1,40 +1,21 @@
 //import './app.css';
 
-const CLASS_MENU = 'hamburguer-menu-animation';
+const CLASS_MENU = 'hamburguer-menu-animation-view';
 
-const menu = document.getElementById('menu');
 const menuItems = document.getElementsByClassName('header__list-item');
 const checkbox = document.getElementById('pitcher');
-const menuHeader = document.querySelector('.header__list');
 const header = document.getElementById('header');
 const hamburguerLineaMenu = document.getElementsByClassName('activator-menu-linea');
+const headerList = document.getElementById('header__list');
 
-
-function mappingItemasClassAddOrRemove(arr, nameClassForItem, containClass){
-    const arrItems = [...arr];
-    arrItems.forEach(item => {
-        if(!item.classList.contains(containClass)
-            && checkbox.checked
-        ) {
-            item.classList.add(nameClassForItem);
-        }
-        if (item.classList.contains(containClass)
-            && !checkbox.checked
-        ) {
-            item.classList.remove(nameClassForItem);
-        }
-    });
-}
 
 checkbox.addEventListener('click', e => {
-    if ( checkbox.checked && !menu.classList.contains(CLASS_MENU) ) {
-        menu.classList.add(CLASS_MENU);
-    };
-    if ( !checkbox.checked && menu.classList.contains(CLASS_MENU) ) {
-        menu.classList.remove(CLASS_MENU);
+    if (!headerList.classList.contains(CLASS_MENU) && checkbox.checked) {
+        headerList.classList.add(CLASS_MENU);
     }
-    if ( checkbox.checked ) menuHeader.style.display = "block";
-    if ( !checkbox.checked ) menuHeader.style.display = "none";
+    if (headerList.classList.contains(CLASS_MENU) && !checkbox.checked) {
+        headerList.classList.remove(CLASS_MENU);
+    }
 });
 
 function mappingHmaburguerMenu(items, screenSize) {
