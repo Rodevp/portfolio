@@ -43,7 +43,7 @@
     text-align: center;
     padding: 40px 0;
     font-family: var(--font-global);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .node {
     color: #54CE00;
@@ -54,24 +54,21 @@
 .py {
     color: #007FF4;
 }
-.git {
-    color: #F05033;
-}
 .db {
-    color: #fcf338;
+    color: #F05033;
 }
 
 .logo--one {
-    animation: move 10s linear infinite;
+    animation: move 10.4s linear infinite;
     transform: translateX(100vw);
 }
 .logo--two {
-    animation: move 10s linear infinite;
+    animation: move 10.6s linear infinite;
     transform: translateX(100vw);
 }
 
 .logo--three {
-    animation: move 10.1s linear infinite;
+    animation: move 10.8s linear infinite;
     transform: translateX(100vw);
 }
 
@@ -94,26 +91,32 @@
         padding: 10px 0;
     }
     .logo--one, .logo--two {
-        animation-duration: 30s;
+        animation-duration: 12s;
     }
     .logo--three {
-        animation-duration: 30.1s;
+        animation-duration: 12.1s;
     }
     .node, .react, .py, .git, .db, .css {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 }
 @media (min-width: 1020px) {
     .skills {
         height: 550px;
     }
+    .node, .react, .py, .git, .db, .css {
+        width: 220px;
+    }
+    .node i, .react i, .py i, .git i, .db i, .css i {
+        font-size: 1.8rem;
+    }
     .logo--one, .logo--two {
-        animation-duration: 40s;
+        animation-duration: 13s;
     }
     .logo--three {
-        animation-duration: 40.1s;
+        animation-duration: 13.1s;
     }
     .node, .react, .py, .git, .db, .css {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 }
