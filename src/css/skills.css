@@ -62,16 +62,16 @@
 }
 
 .logo--one {
-    animation: move 20s infinite;
+    animation: move 10s linear infinite;
     transform: translateX(100vw);
 }
 .logo--two {
-    animation: move 20s infinite;
+    animation: move 10s linear infinite;
     transform: translateX(100vw);
 }
 
 .logo--three {
-    animation: move 20.1s infinite;
+    animation: move 10.1s linear infinite;
     transform: translateX(100vw);
 }
 

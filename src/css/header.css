@@ -37,7 +37,7 @@
 
 .header__list {
     background-color: var(--secundary-color);
-    clip-path: polygon(100% 0, 0 0, 100% 0, 100% 100%);
+    clip-path: circle(0.0% at 99% 1%);
     display: flex;
     height: 300px;
     flex-direction: column;
@@ -70,12 +70,12 @@
 
 /*animaciones*/
 .hamburguer-menu-animation-view {
-    animation: view 2s ease-in-out forwards;
+    animation: view 1.5s ease-in-out forwards;
 }
 
 @keyframes view{
    100% {
-    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    clip-path: circle(139.9% at 99% 1%);
    }
 }
 
