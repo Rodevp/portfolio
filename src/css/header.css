@@ -123,3 +123,19 @@
 .pitcher:checked ~ label .activator-menu-linea:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
+
+@media  (min-width: 720px) {
+    .header__list{
+        height: 400px;
+        width: 490px;
+        margin: 0;
+    }
+}
+
+@media  (min-width: 1020px) {
+    .header__list{
+        height: 400px;
+        width: 660px;
+        margin: 0;
+    }
+}
