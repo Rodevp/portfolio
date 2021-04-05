@@ -10,7 +10,7 @@
 }
 
 .contact-and-studies-title {
-    border: 1px solid var(--global-color);
+    border-bottom: 1px solid var(--global-color);
     width: 90%;
     height: 40px;
     text-align: center;
@@ -78,6 +78,7 @@
     }
     .contact-and-studies-grid {
         gap: 10px;
+        width: 95%;
     }
     .contact__github > h2 a, .contact__platzi > h2 a, .contact__twitter > h2 a,
     .contact__linkedin > h2 a, .contact__academlo > h2 a {
