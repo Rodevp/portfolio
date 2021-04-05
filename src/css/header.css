@@ -27,6 +27,7 @@
     font-size: 1.2rem;
     font-family: var(--font-title);
     padding: 10px 0;
+    margin-left: 2px;
 }
 
 .header__nav {
@@ -70,7 +71,7 @@
 
 /*animaciones*/
 .hamburguer-menu-animation-view {
-    animation: view 1.5s ease-in-out forwards;
+    animation: view 1s ease-in-out forwards;
 }
 
 @keyframes view{

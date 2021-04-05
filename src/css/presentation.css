@@ -5,6 +5,7 @@
     height: 300px;
     flex-direction: column;
     justify-content: center;
+    justify-content: space-around;
     margin-bottom: 10px;
 }
 
@@ -19,9 +20,10 @@
 }
 
 .presentation__mini_description {
-    border-bottom: 1px solid var(--global-color);
+    box-shadow: 2px 0px 5px 7px rgba(82,5,123,0.32);
     height: 200px;
     width: 90%;
+    -webkit-box-shadow: 2px 0px 5px 7px rgba(82,5,123,0.32); 
 }
 
 .presentation__mini_description-paragraph {
