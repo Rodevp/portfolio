@@ -71,7 +71,7 @@
 
 /*animaciones*/
 .hamburguer-menu-animation-view {
-    animation: view 1s ease-in-out forwards;
+    animation: view 0.8s ease-in-out forwards;
 }
 
 @keyframes view{

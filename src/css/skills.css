@@ -1,5 +1,4 @@
 .skills {
-    border-bottom: 1px solid var(--global-color);
     display: flex;
     height: 400px;
     flex-direction: column;
