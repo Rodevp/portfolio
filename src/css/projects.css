@@ -12,6 +12,7 @@
 
 .project {
     background-color: #ffffff;
+    border: 0.5px  solid var(--secundary-color);
     border-radius: 5%;
     display: flex;
     flex-direction: column;
@@ -43,4 +44,14 @@
     width: 90%;
     text-align: justify;
     margin: auto;
-} 
+}
+
+.project__paragraph a {
+    border: 0.5px solid var(--secundary-color);
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+
+}
