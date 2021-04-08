@@ -71,7 +71,8 @@
 
 @media (min-width: 1020px) {
     .projects {
-        flex-direction: row;  
+        flex-direction: row;
+        width: 95%;  
     }
     .project {
         width: 45%;
