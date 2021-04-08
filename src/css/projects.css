@@ -53,5 +53,27 @@
     text-align: center;
     text-decoration: none;
     width: 120px;
+}
 
+@media (min-width: 720px) {
+    .project {
+        border-radius: 2%;
+        height: 280px;
+        width: 90%;
+    }
+    .project__title {
+        font-size: 1.2rem;
+    }
+    .project__paragraph {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1020px) {
+    .projects {
+        flex-direction: row;  
+    }
+    .project {
+        width: 45%;
+    }
 }
